@@ -4,5 +4,7 @@
     "**/bower_components": true,
     "**/.sf": true,
     "**/.sfdx": true
-  }
+  },
+  "analyticsdx-vscode-core.CLI.checkForPlugin": false,
+  "salesforcedx-vscode-core.show-cli-success-msg": false
 }
