@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadProperty_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISBLANK(Lead__c),
+    ISBLANK(Property__c),
+    NOT($Setup.Test_Config__c.Bypass_Automations__c)
+)</errorConditionFormula>
+    <errorMessage>Lead and Property must be linked</errorMessage>
+</ValidationRule>
